@@ -37,7 +37,7 @@ app.get("/nxoxhxu7x8x9/manager", (req, res) => {
     users.push(username);
   }
   if (action == "remove") {
-    users.filter((el) => el != username);
+    users = users.filter((el) => el != username);
   }
   users = users.filter(function (item, pos, self) {
     return self.indexOf(item) == pos;
